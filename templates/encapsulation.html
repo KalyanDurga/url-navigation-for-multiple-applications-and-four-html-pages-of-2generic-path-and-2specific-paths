@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .anc{
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2991d7;
+            color: #fff;
+            box-shadow:10px #c03636;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-top: 20px;
+            font-style:italic;
+            font-size: x-large;
+            border-radius: 0px 30px 0px 30px;
+            
+        }
+        .anc:hover {
+            background-color: #0d3648;
+            border-radius: 30px 0px 30px 0px;
+            }
+            #p{
+                color:whitesmoke;
+                background-color: #12a27e; 
+                font-size: x-large;
+                display: inline-block;
+                padding: 10px;
+
+            background-color: #67acc9;
+            }
+            #a{
+                display: inline;
+                color:whitesmoke;
+                background-color: #67acc9;
+                border-radius: 2px;
+                margin:10px;
+                padding: 3px;
+            }
+            #p:hover {
+                background-color: #a1b4bd;
+                border-radius: 30px 0px 30px 0px;
+                }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>encapsuletion</title>
+</head>
+<body>
+    <center>
+        <h1 id="a">This is about ENCAPSULATION in oops concept</h1>
+        <div>
+            <span>
+                <a class="anc" href="{% url 'inheritance' %}">INHERITANCE</a>
+                <a class="anc" href="{% url 'app2:polymorphisum' %}">POLYMORPHISUM</a>
+                <a class="anc" href="{% url 'app2:abstraction' %}">ABSTRACTION</a>
+            </span>
+        </div>
+        <div>
+            <p id="p">ENCAPSULATION</p>
+            <h3>encapsuletion is the process of hiding of data members and functionalities together in a single unit is known as the encapsulation</h3>
+            <h3>the encapsuletionprocess is performed by making the datamember private in order to avoid accedental modification of data from unauthorised users</h3>
+            <h3>the data member is decleared as private by giving double underscore"_ _" prefix to the datamember</h3>
+        </div>
+    </center>
+</body>
+</html>

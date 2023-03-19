@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .anc{
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2991d7;
+            color: #fff;
+            box-shadow:10px #c03636;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-top: 20px;
+            font-style:italic;
+            font-size: x-large;
+            border-radius: 0px 30px 0px 30px;
+            
+        }
+        .anc:hover {
+            background-color: #0d3648;
+            border-radius: 30px 0px 30px 0px;
+            }
+            #p{
+                color:whitesmoke;
+                background-color: #12a27e; 
+                font-size: x-large;
+                display: inline-block;
+                padding: 10px;
+
+            background-color: #67acc9;
+            }
+            #a{
+                display: inline;
+                color:whitesmoke;
+                background-color: #67acc9;
+                border-radius: 2px;
+                margin:10px;
+                padding: 3px;
+            }
+            #p:hover {
+                background-color: #a1b4bd;
+                border-radius: 30px 0px 30px 0px;
+                }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>encapsuletion</title>
+</head>
+<body>
+    <center>
+        <h1 id="a">This is about INHERITANCE in oops concept</h1>
+        <div>
+            <span>
+                <a class="anc" href="{% url 'encapsulation' %}">ENCAPSULATION</a>
+                <a class="anc" href="{% url 'app2:polymorphisum' %}">POLYMORPHISUM</a>
+                <a class="anc" href="{% url 'app2:abstraction' %}">ABSTRACTION</a>
+            </span>
+        </div>
+        <div>
+            <p id="p">INHERITANCE</p>
+            <h2>Inheritance is the process of inheriting properties from one class to another classs</h2>
+            <h2>There are maily five types of inheritance</h2>
+            <h3>SINGLE level INHERITANCE:- inheriting properties from parent class to chaild class</h3>
+            <h3>MULTILEVEL INHERITANCE :- inheriting properties from one chaild class to another chaild class</h3>
+            <h3>MULTILEVEL INHERITANCE :- inheriting the proverties from more than one parent class to one chaild class</h3>
+            <h3>HYERARICHAL INHERITANCE :- inheriting the properties from one parent class to more than one chaild class</h3>
+            <h3>HYBREAD INHERITANCE :- combination of morethan one tye of inheritance</h3>
+        </div>
+    </center>
+</body>
+</html>
